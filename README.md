@@ -8,6 +8,6 @@ Rocketseat Card created with HTML, CSS and JavaScript consuming api from Github,
 
 ## This application has 2 features, which are:
 
-+ Add random background by clicking the button
-+ Add previously chosen background
+> + Add random background by clicking the button
+> + Add previously chosen background
 
