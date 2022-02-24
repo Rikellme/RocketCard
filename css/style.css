@@ -1,0 +1,201 @@
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-card);
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    place-items: center;
+
+}
+
+.container > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 auto;
+
+}
+
+.container > .content > p {
+    margin-bottom: 1rem;
+}
+
+.container > .content > .card {
+    background-color: var(--bg);
+    width: 400px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .content > .card > .card-profile {
+    background-color: var(--bg-card);
+    width: 90%;
+    border-radius: 50px;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    overflow-x: hidden;
+}
+
+.container > .content > .card > .card-profile > .logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.container > .content > .card > .card-profile > .logo p {
+    font-size: 24px;
+}
+
+.container > .content > .card > .card-profile > .logo > .elipse {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .content > .card > .card-profile > .informations-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 2rem 0;
+    
+}
+
+.container > .content > .card > .card-profile > .informations-container > .informations {
+    position: relative;
+    width: 331px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container > .content > .card > .card-profile > .informations-container > .informations > img {
+    width: 300px;
+    height: 300px;
+    border: .5rem solid var(--img-profile);
+    border-radius: 100%;
+    margin-right: -3rem;
+}
+
+.container > .content > .card > .card-profile > .informations-container > .informations > .group-informations {
+    position: absolute;
+    left: -1rem;
+    bottom: -1rem;
+    background: linear-gradient(to bottom, #000, #4645459c, #3e383842);
+    padding: 1.5rem 1rem;
+    border-radius: 2.5rem;
+    display: grid;
+    gap: .5rem;
+    
+}
+
+.container > .content > .card > .card-profile > .informations-container > .informations > .group-informations > div {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    gap: .5rem;
+}
+
+.container .button-wrapper {
+    font-size: 20px;
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    margin: 3rem auto;
+    padding-bottom: 3rem;;
+}
+
+.container .button-wrapper .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container .button-wrapper .buttons button {
+    width: 229px;
+    height: 59px;
+    border: 1px solid var(--border-button);
+    border-radius: 15px;
+    background-color: var(--bg);
+    color: var(--buttons);
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.container .button-wrapper .buttons .group-button button {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    transform: scale(1);
+}
+
+.container .button-wrapper .buttons .group-button button:hover {
+    transform: scale(1.1);
+}
+
+button#purple {
+    background-color: #8257e5;
+}
+
+button#white {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+    
+}
+
+@media (min-width: 700px) {
+    .container {
+        display: flex;
+    }
+}
